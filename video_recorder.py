@@ -52,9 +52,9 @@ while True:
 
     # Process the key event
     key = cv.waitKey(max(int(wait_msec / speed_table[speed_index]), 1))
-    if key == ord(' '):       
+    if key == ord('q'):       
         key = cv.waitKey()
-    if key == ord('q'):
+    if key == ord(' '):
         recording=not recording
     if key == 27: # ESC
         break
